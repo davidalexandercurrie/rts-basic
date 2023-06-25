@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import p5 1.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <!-- import socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="logs-container">
+      <div id="bar">
+        <div id="close-logs">X</div>
+      </div>
+      <div id="logs"></div>
+      <div id="chat-input-container">
+        <input type="text" name="chat-input" id="chat-input" />
+      </div>
+    </div>
+    <div id="game-info">
+      <p id="timer"></p>
+      <p id="display-resources"></p>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

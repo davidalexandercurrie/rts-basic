@@ -1,0 +1,65 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+canvas {
+  margin: 2em;
+}
+#logs-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  position: fixed;
+  transition: left 0.5s;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 800px;
+  background: black;
+  color: white;
+  font-size: 1em;
+  border: 3px solid purple;
+}
+
+#bar {
+  margin: -3px;
+  box-sizing: border-box;
+  width: calc(100% + 6px);
+  border: 3px solid red;
+  height: 2em;
+  display: flex;
+  justify-content: right;
+}
+#close-logs {
+  border: 3px solid red;
+  width: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+#close-logs:hover {
+  background: blue;
+  color: white;
+}
+
+#logs {
+  overflow: auto;
+  padding: 1em;
+  height: calc(100% - 4em);
+  margin: 0.5em;
+}
+
+#chat-input-container {
+  border: 2px solid pink;
+}
+#chat-input {
+  width: calc(100% - 6px);
+}
+#game-info {
+  font-size: 1.5em;
+}
